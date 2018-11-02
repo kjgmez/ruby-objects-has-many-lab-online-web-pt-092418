@@ -20,7 +20,7 @@ class Artist
   end
 
   def self.song_count
-    self.class.collect{|artist| artist.songs}.flatten.count
+    @@artists.collect{|artist| artist.songs}.flatten.count
   end
 
 end
